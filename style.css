@@ -1,0 +1,35 @@
+body {
+  background: linear-gradient(
+    106.5deg,
+    rgba(255, 215, 185, 0.91) 23%,
+    rgba(223, 159, 247, 0.8) 93%
+  );
+}
+.container {
+  margin: 50px auto;
+  display: block;
+  background: linear-gradient(
+    110.5deg,
+    rgba(248, 196, 249, 0.66) 22.8%,
+    rgba(253, 122, 4, 0.15) 64.6%
+  );
+}
+.button {
+  background-color: rgba(223, 159, 247, 0.8);
+  color: #fff;
+  cursor: pointer;
+  transition: all ease-in-out;
+}
+.button:hover {
+  background-color: #fff;
+  color: rgba(223, 159, 247, 0.8);
+}
+@media (max-width: 600px) {
+  .container {
+    width: auto !important ;
+  }
+  .button {
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
