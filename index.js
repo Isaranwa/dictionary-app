@@ -1,7 +1,6 @@
 function playSound() {
   sound.play();
 }
-
 function getDictionary(response) {
   let word = document.querySelector("#input").value;
   let result = document.querySelector("#result");
@@ -31,7 +30,6 @@ function getDictionary(response) {
   `;
   sound.setAttribute("src", `${response.data[0].phonetics[1].audio}`);
 }
-
 function getWord(event) {
   event.preventDefault();
   let word = document.querySelector("#input").value;
