@@ -3,7 +3,6 @@ function playSound() {
 }
 
 function getDictionary(response) {
-  console.log(response);
   let word = document.querySelector("#input").value;
   let result = document.querySelector("#result");
   result.innerHTML = `
@@ -13,7 +12,7 @@ function getDictionary(response) {
       <button onclick="playSound()">
       <i class="fa-solid fa-volume-high"></i>
       </button>
-      <p>${response.data[0].phonetics[1].text}</p>
+      <p>${response.data[0].phonetic}</p>
       <h3>${response.data[0].meanings[0].partOfSpeech}</h3>
       
       <ul>
@@ -31,7 +30,6 @@ function getDictionary(response) {
     </div>
   `;
   sound.setAttribute("src", `${response.data[0].phonetics[1].audio}`);
-  console.log(sound);
 }
 
 function getWord(event) {
